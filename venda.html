@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="landing.html">Home </a>
+        <nav>
+            <ul class="menu">
+                <li> <a href="veiculos.html">Veiculos</a> </li>
+                <li> <a href="venda.html">Venda</a> </li>
+                <li> <a href="historico.html">Histórico</a> </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="sessao-venda">
+        <h1>Cadastro de venda</h1>
+        <div class="container-venda">
+            <div class="inputEsquerda">
+
+                <div>
+                    <label for="nome">Nome do cliente</label>
+                    <input type="text" id="nome">
+                </div>
+                
+                <div>
+                    <label for="rg">RG</label>
+                    <input type="text" id="rg">
+                </div>
+                
+
+                <div>
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco">
+                </div>
+               
+                <div>
+                    <span>Veiculo</span>
+                    <select name="veiculo" id="veiculo">Veiculo
+                        <option value="">Selecione o veiculo</option>
+                    </select>
+                </div>
+                
+
+                <div>
+                    <label for="pagamento">Forma de pagamento</label>
+                    <input type="text" id="pagamento">
+                </div>
+
+                <div class="IDVenda">
+                    <label for="IDvenda">ID Venda</label>
+                    <input type="number" id="IDvenda">
+                </div>
+                
+            </div>
+            <div class="inputDireita">
+                <div>
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                </div>
+                
+                <div>
+                    <label for="cpf">CPF</label>
+                    <input type="text" id="cpf">
+                </div>
+                
+                <div>
+                    <label for="celular">Celular</label>
+                    <input type="text" id="celular">
+                </div>
+                
+                <div>
+                    <label for="data">Data</label>
+                    <input type="text" id="data">
+                </div>
+               
+                <div>
+                    <span>Parcelamento</span>
+                    <select name="" id="parcela">
+                        <option value="Qtd Parcelas">Qtd Parcelas</option>
+                    </select>
+                </div>
+                
+            </div>
+
+
+        </div>
+
+        <div class="buttons-cadastro">
+            <div>
+                <button type="submit">Finalizar</button>
+            </div>
+
+            <div>
+                <button type="submit">Cancelar</button>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="logo-foford">Foford</div>
+
+    </footer>
+</body>
+</html>

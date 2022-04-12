@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veiculos</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/popup.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="landing.html">Home </a>
+        <nav>
+            <ul class="menu">
+                <li> <a href="veiculos.html">Veiculos</a> </li>
+                <li> <a href="venda.html">Venda</a> </li>
+                <li> <a href="historico.html">Histórico</a> </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <script>
+        function showModal() {
+            var elemente = document.getElementById("modal");
+            elemente.classList.add("show-modal");
+        }
+        function hideModal() {
+            var elemente = document.getElementById("modal");
+            elemente.classList.remove("show-modal");
+        }
+
+    </script>
+
+    <section class="sessao-principal">
+        <h1>Cadastro de veículo</h1>
+        <div class="faixa-inputs">
+            <button class="btnCadastro" onclick="showModal()">Cadastrar novo</button>
+            <label for="Modelo">Modelo</label>
+            <input id="Modelo" type="text">
+            <label for="Placa">Placa</label>
+            <input id="Placa" type="text">
+            <button class="pesquisa" type="submit"><img src="assets/img/pngwing.com.png" height="10px" alt=""></button>
+        </div>
+
+        <div class="faixa-veic">
+            <ul>
+                <li>Modelo</li>
+                <li>Marca</li>
+                <li>Placa</li>
+                <li>Valor</li>
+            </ul>
+        </div>
+        <div class="faixa-cadastros">
+
+            <div class="lista-cadastro">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="btns-cadastro">
+                <button type="submit"><img src="assets/img/botao-editar.png" height="15px" alt=""></button>
+                <button type="submit"><img src="assets/img/excluir.png" height="15px" alt=""></button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="logo-foford">Foford</div>
+
+    </footer>
+
+
+    <!-- div do popup-->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            
+            <span onclick="hideModal()">&times;</span>
+
+
+            <div class="cdnovo">
+                <h1>Cadastro de Veículo</h1>
+
+                <div>
+                    <label for="modelo">Modelo Veículo:</label>
+                    <input type="text" id="modelo">
+
+                </div>
+
+                <div>
+                    <label for="ano">Ano:</label>
+                    <input type="text" id="ano">
+
+                </div>
+
+                <div>
+                    <label for="cor">Cor:</label>
+                    <input type="text" id="cor">
+
+                </div>
+
+
+                <div>
+                    <label for="marca">Marca:</label>
+                    <input type="text" id="marca">
+                </div>
+
+                <div>
+                    <label for="valor">Valor:</label>
+                    <input type="text" id="valor">
+                </div>
+
+                <div>
+                    <label for="chassi">Chassi:</label>
+                    <input type="text" id="chassi">
+                </div>
+
+
+                <div>
+                    <label for="placa">Placa:</label>
+                    <input type="text" id="placa">
+                </div>
+
+            </div>
+
+            <div class="Salvar-cadastro">
+                <button>SALVAR</button>
+                </div>
+            
+</body>
+
+</html>
