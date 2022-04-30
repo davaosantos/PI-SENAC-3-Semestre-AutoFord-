@@ -139,6 +139,17 @@ a{
     background-color: white;
 }
 
+.lista-cadastro ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lista-cadastro ul button{
+    cursor: pointer;
+}
+
 .btns-cadastro button{
     cursor: pointer;
     border: 1px solid black;
