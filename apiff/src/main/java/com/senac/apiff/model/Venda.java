@@ -41,9 +41,12 @@ public class Venda {
     @Column(name = "Celular")
     private int celular;
 
-    @Column(name = "forma_pagamento")
+    @Column(name = "Forma_pagamento")
     private String formaPagamento;
 
-    @Column(name= "data_venda")
+    @Column(name= "Data_venda")
     private Date DataVenda;
+
+    @Column(name= "Parcela")
+    private int parcela;
 }

@@ -1,0 +1,309 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+
+body{
+   background-color: rgba(17, 16, 16, 0.76);
+  /* background-image: url('../assets/img/plano-de-fundo-preto28.jpg'); */
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+@media (max-width: 1000px){
+    body{
+        background-size:auto;
+    }
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+.header{
+    background-color: #FB5C2A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu a{
+    background-color: #FB5C2A;
+    display: block;
+    padding: 10px;
+}
+
+
+/* Estilo veiculo */
+
+.sessao-principal{
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 2%;
+    width: 60%;
+    height: 50vh;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+}
+
+.sessao-principal h1 {
+    text-align: center;
+}
+
+.sessao-principal .faixa-veic, .faixa-cadastros{
+    position: relative;
+    left: 15%;
+    top: 10px;
+}
+
+.faixa-inputs{
+    margin-left: -40px;
+}
+
+.faixa-inputs .btnCadastro{
+    cursor: pointer;
+    background-color: #FB5C2A;
+    border-style: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-weight: bold;
+    margin-left: 80px;
+    margin-bottom: 10px;
+    width: 27%;
+    height: 30px;
+}
+
+.faixa-inputs input{
+    border-radius: 5px;
+    border-style: 0.1px solid black;
+    height: 20px;
+    width: 15%;
+    margin-left: 20px;
+}
+
+.faixa-inputs .pesquisa{
+    cursor: pointer;
+    padding-left: 5px;
+    margin-left: 20px;
+    background-color: #C4C4C4;
+    width: 40px;
+    height: 25px;
+}
+
+.faixa-veic{
+    height: 25px;
+    width: 70%;
+    background-color: #C4C4C4;
+}
+
+.faixa-veic ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.faixa-veic ul li{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.faixa-cadastros{
+    display: flex;
+    flex-direction: row;
+}
+
+.lista-cadastro{
+    height: 25px;
+    width: 70%;
+    background-color: white;
+}
+
+.lista-cadastro ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.lista-cadastro ul button{
+    cursor: pointer;
+}
+
+.btns-cadastro button{
+    cursor: pointer;
+    border: 1px solid black;
+    box-shadow: 2px black ; 
+    background-color: #C4C4C4;
+    margin-top: 2px;
+    margin-left: 10px;
+}
+
+.faixa-cadastros .lista-cadastro{
+    justify-content: flex-start;
+}
+
+.faixa-cadastros .btns-cadastro{
+    justify-content: flex-end;
+}
+
+.footer{
+    background-color: #C4C4C4;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 90%;
+    width: 100%;
+    height: 10%;
+    
+}
+
+.logo-foford{
+    padding-right: 20px;
+    padding-top: 35px;
+}
+
+
+
+/*Estilo pag venda*/
+
+#sessao-venda{
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 0.5%;
+    background-color: #E5E5E5;
+    width: 800px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+#sessao-venda h1{
+    padding-top: 10px;
+    text-align: center;
+}
+
+.container-venda{
+    padding-left: 13%;
+    display: flex;
+    flex-direction: row;
+}
+
+.inputDireita{
+    padding-left: 5%;
+}
+
+.container-venda .inputEsquerda div {
+    padding-top: 10px;
+}
+
+.container-venda .inputDireita div {
+    padding-top: 10px;
+}
+
+.IDVenda{
+    margin-top: 20%;
+}
+
+.IDVenda input{
+    width: 60px;
+}
+
+
+.buttons-cadastro{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+.buttons-cadastro div{
+    padding-left: 25px;
+}
+
+.buttons-cadastro button{
+    cursor: pointer;
+    background-color:#FB5C2A;
+    border-radius: 5px;
+    width: 100px;
+    padding: 10px;
+    border-style: none;
+}
+
+
+
+/*Estilo pag histórico*/
+
+.sessao-historico{
+    box-sizing: border-box;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 2%;
+    width: 60%;
+    height: 50vh;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+}
+
+.sessao-historico h1 {
+    text-align: center;
+}
+
+.faixa-inputs-hist{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.faixa-historico{
+    background-color: #C4C4C4;
+    width: 110vh;
+    margin-left: 60px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.faixa-dados-historico{
+    width: 110vh;
+    display: flex;
+    margin-left: 60px;
+    flex-direction: row;
+    height: 25px;
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
