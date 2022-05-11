@@ -1,0 +1,175 @@
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+body{
+   background-repeat: repeat-x;
+   background-size: auto;
+}
+
+
+
+a{
+    color: #FB5C2A;
+    text-decoration: underline;
+}
+
+
+
+#header{
+    background-image: url("/frontff/src/assets/img/fundoBk.png"); 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: #FB5C2A;
+    display: block;
+    padding: 10px;
+}
+
+.logout{
+    background-color: #FB5C2A;
+    padding-left: 5px;
+    padding-top: 5px;
+    border:1px solid #C4C4C4;
+    box-shadow: #C4C4C4 5px;
+    padding-right: 3px;
+    border-radius: 6px;
+    position: absolute;
+    right: 15px;
+    text-decoration: none;
+}
+
+
+/*Background Carro 1 */
+
+.container-carros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/frontff/src/assets/img/fundoBk.png");
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.carroOne{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+
+.welcome p{
+    background-color: #FB5C2A;
+    display: inline;
+    margin-left: 5px;
+    padding: 20px;
+    justify-content: flex-start;
+    color: white;
+}
+
+.carroMercedez{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 35px;
+    margin-top: 60px;
+}
+
+.carroMercedez span{
+    box-sizing: border-box;
+    background-color: #C4C4C4;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    margin-right: 10px;
+    height: 200px;
+    overflow: hidden;
+} 
+
+.carroMercedez strong{
+    padding-left: 40px;
+    text-align: center;
+    text-decoration: underline;
+    color: #FB5C2A;
+}
+
+
+
+.faixa-carros{
+    height: 220px;
+    background-image: url('/frontff/src/assets/img/SilverFoil1_generated.jpg');
+    border: 2px solid #a3a3a3e8;
+}
+
+.faixa-carros ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.faixa-carros ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+}
+
+.footer{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-image: url('/frontff/src/assets/img/peakpx.jpg');     /* url('../assets/img/peakpx.jpg'); */
+    height: 200px;
+    background-repeat: repeat-x;
+}
+
+.logotipos{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.sobreNos{
+    color: white;
+}
+
+.sobreNos p{
+    padding-left: 170px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    font-size: medium;
+}
+
+.mapa img{
+    padding: 20px;
+    border-radius:  50px;
+}
+
+
+
+
+
+
+
+
+
+
