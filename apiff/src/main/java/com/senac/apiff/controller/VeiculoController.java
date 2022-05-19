@@ -44,7 +44,7 @@ public class VeiculoController {
             currentVeiculo.setMarca(veiculo.getMarca());
             currentVeiculo.setModelo(veiculo.getModelo());
             currentVeiculo.setPlaca(veiculo.getPlaca());
-            currentVeiculo.setValor_veiculo(veiculo.getIdVeiculo());
+            currentVeiculo.setValorVeiculo(veiculo.getValorVeiculo());
             repoVeic.save(currentVeiculo);
 
         }else{
@@ -61,6 +61,5 @@ public class VeiculoController {
             ResponseEntity.notFound().build();
         }
     }
-
 
 }

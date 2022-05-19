@@ -1,4 +1,4 @@
-import './index.css'
+import './indexVeiculos.css'
 import './popup.css'
 import axios from 'axios';
 import { useState } from 'react';

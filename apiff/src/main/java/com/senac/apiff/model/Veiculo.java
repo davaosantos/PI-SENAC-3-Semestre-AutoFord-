@@ -16,22 +16,22 @@ public class Veiculo {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idVeiculo;
 
-    @Column(name="Placa")
+    @Column(name="PLACA")
     private String placa;
 
-    @Column(name="Chassi")
+    @Column(name="CHASSI")
     private String chassi;
 
-    @Column(name="Cor")
+    @Column(name="COR")
     private String cor;
 
-    @Column(name="Modelo")
+    @Column(name="MODELO")
     private String modelo;
 
-    @Column(name="valor_veiculo")
-    private long valor_veiculo;
+    @Column(name="VALOR_VEICULO")
+    private long valorVeiculo;
 
-    @Column(name="Marca")
+    @Column(name="MARCA")
     private String marca;
 
 }

@@ -26,27 +26,27 @@ public class Venda {
     @Column(name = "Nome")
     private String nome;
 
-    @Column(name = "Endereco")
+    @Column(name = "ENDERECO")
     private String endereco;
 
-    @Column(name = "Rg")
+    @Column(name = "RG")
     private String rg;
 
-    @Column(name = "Email")
+    @Column(name = "EMAIL")
     private String email;
 
-    @Column(name = "Cpf")
+    @Column(name = "CPF")
     private long cpf;
 
-    @Column(name = "Celular")
+    @Column(name = "CELULAR")
     private int celular;
 
-    @Column(name = "Forma_pagamento")
+    @Column(name = "FORMA_PAGAMENTO")
     private String formaPagamento;
 
-    @Column(name= "Data_venda")
-    private Date DataVenda;
+    @Column(name= "DATA_VENDA")
+    private Date dataVenda;
 
-    @Column(name= "Parcela")
+    @Column(name= "PARCELA")
     private int parcela;
 }

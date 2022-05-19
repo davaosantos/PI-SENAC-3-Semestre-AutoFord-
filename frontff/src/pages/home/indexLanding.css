@@ -12,8 +12,6 @@ body{
    background-size: auto;
 }
 
-
-
 a{
     color: #FB5C2A;
     text-decoration: underline;
@@ -22,7 +20,7 @@ a{
 
 
 #header{
-    background-image: url("/frontff/src/assets/img/fundoBk.png"); 
+    background-image: url("./assets/fundoBk.png"); 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -36,6 +34,7 @@ a{
 
 .menu li {
     margin-left: 10px;
+    color: white;
 }
 
 .menu a{
@@ -66,7 +65,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("/frontff/src/assets/img/fundoBk.png");
+    background-image: url("./assets/fundoBk.png");
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -75,14 +74,15 @@ a{
     display: flex;
     justify-content: center;
     padding-bottom: 25px;
+    
 }
 
 
 .welcome p{
     background-color: #FB5C2A;
     display: inline;
-    margin-left: 5px;
-    padding: 20px;
+    margin-left: 10px;
+    padding: 1.1%;
     justify-content: flex-start;
     color: white;
 }
@@ -98,13 +98,14 @@ a{
 .carroMercedez span{
     box-sizing: border-box;
     background-color: #C4C4C4;
+    right: 0px;
+    width: 18%;
     padding-top: 10px;
     padding-left: 20px;
     padding-right: 20px;
     color: black;
-    margin-right: 10px;
+    margin-right: 2%;
     height: 200px;
-    overflow: hidden;
 } 
 
 .carroMercedez strong{
@@ -118,7 +119,7 @@ a{
 
 .faixa-carros{
     height: 220px;
-    background-image: url('/frontff/src/assets/img/SilverFoil1_generated.jpg');
+    background-image: url('./assets/SilverFoil1_generated.jpg');
     border: 2px solid #a3a3a3e8;
 }
 
@@ -138,7 +139,7 @@ a{
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    background-image: url('/frontff/src/assets/img/peakpx.jpg');     /* url('../assets/img/peakpx.jpg'); */
+    background-image: url('./assets/peakpx.jpg');     
     height: 200px;
     background-repeat: repeat-x;
 }

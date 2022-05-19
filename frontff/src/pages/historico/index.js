@@ -1,66 +1,43 @@
-import './index.css'
+import './indexHistorico.css'
 
 export default function Historico() {
     
     return(
-        <div>
-        <meta charSet="UTF-8" />
-        <meta httpequiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Home Page</title>
-        <link rel="stylesheet" href="styles/styleLanding.css" />
-        <header id="header">
-          <a href>Home</a>
-          <nav>
-            <ul classname="menu">
-              <li> <a href="veiculos.html">Veiculos</a> </li>
-              <li> <a href="venda.html">Venda</a> </li>
-              <li> <a href="historico.html">Histórico</a> </li>
-            </ul>
-          </nav>
-          <a href="TelaLogin.html" classname="logout"><img src="assets/img/logout.png" width="20px" height="20px" alt="logout" /></a>
-        </header>
-        <section classname="container-carros">
-          <div classname="carroOne">
-            <img width="800px" src="assets/img/carroOne1.png" alt="one1" />
-          </div>
-          <div classname="welcome"><p>WELCOME TO FOFORD</p></div>  
-          <div classname="carroMercedez">
-            <img width="600px" src="assets/img/mercedezBenz.png" alt="mercedez" />
-            <span><strong>Mercedes - Benz</strong><br /> 
-              "Foi inspirada numa figura <br /> que ele havia 
-              desenhado <br /> num postal , o qual remeteu <br /> a sua esposa com o <br /> seguinte comentário: um 
-              <br /> dia essa 
-              estrela brilhará"
-            </span>
-          </div>
-          <div classname="faixa-carros">
-            <ul>
-              <li><img src="assets/img/2017-Audi-A5-Coupe-image-01-800.jpg" width="250px" height="170px" alt /></li>
-              <li><img src="assets/img/The-forbidden-Audi-is-finally-coming-to-America.webp" width="250px" height="{170}" alt /></li>
-              <li><img src="assets/img/S110001_full.jpg" width="250px" height="170px" alt /></li>
-            </ul>
-          </div>
-        </section>
-        <footer classname="footer">
-          <div classname="logotipos">
-            <ul>
-              <li><img src="assets/img/whatsapp.png" width="30px" alt /></li>
-              <li><img src="assets/img/facebook.png" width="30px" alt /></li>
-              <li><img src="assets/img/instagram.png" width="30px" alt /></li>
-            </ul>
-          </div>
-          <div classname="sobreNos">
-            <p>Sobre...</p>
-            <p>Sobre nos</p>
-            <p>Sobre a Audi</p>
-            <p>Contato</p>
-            <p>Aconselhamento de compra</p>
-          </div>
-          <div classname="mapa">
-            <img src="assets/img/Google-Maps.jpg" width="250px" alt />
-          </div>
-        </footer>
-      </div> 
+          <div>
+          <header className="header">
+            <a href="landing.html">Home </a>
+            <nav>
+              <ul className="menu">
+                <li> <a href="veiculos.html">Veiculos</a> </li>
+                <li> <a href="venda.html">Venda</a> </li>
+                <li> <a href="historico.html">Histórico</a> </li>
+              </ul>
+            </nav>
+          </header>
+          <section className="sessao-historico">
+            <h1>Histórico de vendas</h1>        
+            <div className="faixa-inputs-hist">
+              <label htmlFor="IDVenda">ID Venda:</label>
+              <input id="IDVenda" type="number" />
+              <label htmlFor="Data">Data:</label>
+              <input id="Data" type="datetime" />
+            </div>
+            <div className="faixa-historico">
+              <div>IDVenda</div>
+              <div>Nome</div>
+              <div>Veiculo</div>
+              <div>Valor</div>
+            </div>
+            <div className="faixa-dados-historico">
+              <div />
+              <div />
+              <div />
+              <div />
+            </div>
+          </section>
+          <footer className="footer">
+            <div className="logo-foford">Foford</div>
+          </footer>
+        </div>
         )
 }
