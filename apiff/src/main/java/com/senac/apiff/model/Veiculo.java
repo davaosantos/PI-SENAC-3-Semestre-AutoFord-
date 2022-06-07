@@ -12,12 +12,15 @@ import javax.persistence.*;
 @NoArgsConstructor
 public class Veiculo {
     @Id
-    @Column(name="IDVeiculo")
+    @Column(name="ID_VEICULO")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idVeiculo;
 
     @Column(name="PLACA")
     private String placa;
+
+    @Column(name="ANO")
+    private int ano;
 
     @Column(name="CHASSI")
     private String chassi;

@@ -9,6 +9,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController/**Indica que será usado os verbos do REST */
 @RequestMapping(path = "/vendas") /**Rota para acesso da controller */
 public class VendaController {
@@ -26,10 +27,10 @@ public class VendaController {
         return repo.findById(id);
     }
 
-    @GetMapping(path = "/buscaData")
-    public List<Venda> findByDataVenda(Date data_venda){
-        return repo.findByDataVenda(data_venda);
-    }
+    @GetMapping(path = "/buscaData/{dataVenda}")
+   public List<Venda> findByDataVenda(Date dataVenda){
+       return repo.findByDataVenda(dataVenda);
+   }
 
     @PostMapping(path = "/")
     public Venda saveVenda(@RequestBody Venda venda) {

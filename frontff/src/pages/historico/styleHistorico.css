@@ -9,7 +9,7 @@ body, ul, li, p{
 
 body{
    background-color: rgba(17, 16, 16, 0.76);
-   background-image: url('../home/assets/plano-de-fundo-preto28.jpg'); 
+   background-image: url('../../assets/plano-de-fundo-preto28.jpg'); 
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -20,15 +20,12 @@ body{
     }
 }
 
-
-a{
+.hist-header a{
     color: black;
     text-decoration: none;
 }
 
-
-
-.header{
+.hist-header{
     background-color: #FB5C2A;
     display: flex;
     justify-content: space-between;
@@ -37,20 +34,19 @@ a{
     padding: 20px;
 }
 
-.menu{
+.hist-menu{
     display: flex;
 }
 
-.menu li {
+.hist-menu li {
     margin-left: 10px;
 }
 
-.menu a{
+.hist-menu a{
     background-color: #FB5C2A;
     display: block;
     padding: 10px;
 }
-
 
 /* Estilo veiculo */
 
@@ -167,7 +163,7 @@ a{
     justify-content: flex-end;
 }
 
-.footer{
+.hist-footer{
     background-color: #C4C4C4;
     display: flex;
     justify-content: end;
@@ -178,7 +174,7 @@ a{
     
 }
 
-.logo-foford{
+.hist-logo-foford{
     padding-right: 20px;
     padding-top: 35px;
 }
@@ -289,21 +285,10 @@ a{
     width: 110vh;
     display: flex;
     margin-left: 60px;
+    justify-content: space-around;
     flex-direction: row;
     height: 25px;
     background-color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 

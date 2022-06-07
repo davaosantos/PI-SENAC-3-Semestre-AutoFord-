@@ -1,4 +1,3 @@
-
 body, ul, li, p{
     margin: 0px;
     padding: 0px;
@@ -18,9 +17,8 @@ a{
 }
 
 
-
 #header{
-    background-image: url("./assets/fundoBk.png"); 
+    background-image: url("../assets/fundoBk.png"); 
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -65,7 +63,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: url("./assets/fundoBk.png");
+    background-image: url("../assets/fundoBk.png");
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -119,7 +117,7 @@ a{
 
 .faixa-carros{
     height: 220px;
-    background-image: url('./assets/SilverFoil1_generated.jpg');
+    background-image: url('../assets/SilverFoil1_generated.jpg');
     border: 2px solid #a3a3a3e8;
 }
 
@@ -139,7 +137,7 @@ a{
     padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    background-image: url('./assets/peakpx.jpg');     
+    background-image: url('../assets/peakpx.jpg');     
     height: 200px;
     background-repeat: repeat-x;
 }
@@ -164,13 +162,3 @@ a{
     padding: 20px;
     border-radius:  50px;
 }
-
-
-
-
-
-
-
-
-
-

@@ -16,14 +16,14 @@ import javax.persistence.*;
 @NoArgsConstructor /*Construtor que nao recebe atributo */
 public class Venda {
     @Id
-    @Column(name = "IDVenda")
+    @Column(name = "ID_VENDA")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int idVenda;
 
-    @Column(name = "IDVeiculo")
-    private int idVeiculo;
+    @Column(name = "NOME_VEICULO")
+    private String nomeVeiculo;
 
-    @Column(name = "Nome")
+    @Column(name = "NOME")
     private String nome;
 
     @Column(name = "ENDERECO")
@@ -39,7 +39,7 @@ public class Venda {
     private long cpf;
 
     @Column(name = "CELULAR")
-    private int celular;
+    private long celular;
 
     @Column(name = "FORMA_PAGAMENTO")
     private String formaPagamento;
@@ -49,4 +49,7 @@ public class Venda {
 
     @Column(name= "PARCELA")
     private int parcela;
+
+    @Column(name = "VALOR_VENDA")
+    private long valorVenda;
 }

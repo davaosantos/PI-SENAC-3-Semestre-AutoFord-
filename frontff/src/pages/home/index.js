@@ -1,37 +1,33 @@
-import './indexLanding.css'
-import mercedez from './assets/mercedezBenz.png';
-import carro1 from './assets/carroOne1.png';
-import audi from './assets/2017-Audi-A5-Coupe-image-01-800.jpg';
-import audiAmerica from './assets/The-forbidden-Audi-is-finally-coming-to-America.webp'
-import s11 from './assets/S110001_full.jpg'
-import whatssap from './assets/whatsapp.png'
-import facebook from './assets/facebook.png'
-import instagram from './assets/instagram.png'
-import maps from './assets/Google-Maps.jpg'
-import logout from './assets/logout.png'
 
-export default function Home() {
-    
+import mercedez from '../../assets/mercedezBenz.png';
+import carro1 from '../../assets/carroOne1.png';
+import audi from '../../assets/2017-Audi-A5-Coupe-image-01-800.jpg';
+import audiAmerica from '../../assets/The-forbidden-Audi-is-finally-coming-to-America.webp'
+import s11 from '../../assets/S110001_full.jpg'
+import whatssap from '../../assets/whatsapp.png'
+import facebook from '../../assets/facebook.png'
+import instagram from '../../assets/instagram.png'
+import maps from '../../assets/Google-Maps.jpg'
+import logout from '../../assets/logout.png'
+import '../../styles/landing.css'
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+
+
+export default function Home(){
     return(
         <div>
-          <meta charSet="UTF-8" />
-          <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-          <title>Home Page</title>
-          <link rel="stylesheet" href="styles/styleLanding.css" />
-          <header id="header">
-            <a href>Home</a>
-            <nav>
-              <ul className="menu">
-                <li> Veiculos</li>
-                <Link to="../veiculos">
-                  <li> Venda</li>
-                </Link>
-                <li> Histórico</li>
-              </ul>
-            </nav>
-            <a href="TelaLogin.html" className="logout"><img src={logout} width="20px" height="20px"/></a>
+            <header id="header">
+              <a><Link to="/">Home</Link></a>
+              <nav>
+                <ul className="menu">
+                  <li><Link to="/veiculos">Veiculos</Link></li>
+                  <li><Link to="/venda">Venda</Link></li>
+                  <li><Link to="/historico">Histórico</Link></li>
+                </ul>
+              </nav>
+            <a className='logout'><Link to="/login"><img src={logout} height="20px" width="20px"></img></Link></a>
           </header>
+   
           <section className="container-carros">
             <div className="carroOne">
               <img width="800px" src={carro1}/>
@@ -73,6 +69,7 @@ export default function Home() {
               <img src={maps} width="250px"/>
             </div>
           </footer>
-      </div> 
+
+        </div>
     )
 }

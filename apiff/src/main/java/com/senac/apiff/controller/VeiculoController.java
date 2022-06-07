@@ -10,6 +10,7 @@ import lombok.var;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping(path = "/veiculos")
 public class VeiculoController {
@@ -52,7 +53,7 @@ public class VeiculoController {
         };
     }
 
-    @DeleteMapping(path = "/")
+    @DeleteMapping(path = "/{id}")
     public void deleteVeiculo(@PathVariable int id){
         var resp = repoVeic.findById(id);
         if(resp.isPresent()){

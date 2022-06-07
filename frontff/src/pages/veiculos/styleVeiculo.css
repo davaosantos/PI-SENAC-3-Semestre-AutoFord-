@@ -6,10 +6,9 @@ body, ul, li, p{
     font-family: Arial;
 }
 
-
-body{
+.veic-body{
    background-color: rgba(17, 16, 16, 0.76);
-  /* background-image: url('../assets/img/plano-de-fundo-preto28.jpg');  */
+   background-image: url('../../assets/plano-de-fundo-preto28.jpg'); 
    background-repeat: no-repeat;
    background-size: cover;
 }
@@ -20,15 +19,12 @@ body{
     }
 }
 
-
-a{
+.veic-header a{
     color: black;
     text-decoration: none;
 }
 
-
-
-.header{
+.veic-header{
     background-color: #FB5C2A;
     display: flex;
     justify-content: space-between;
@@ -37,15 +33,15 @@ a{
     padding: 20px;
 }
 
-.menu{
+.veic-menu{
     display: flex;
 }
 
-.menu li {
+.veic-menu li {
     margin-left: 10px;
 }
 
-.menu a{
+.veic-menu a{
     background-color: #FB5C2A;
     display: block;
     padding: 10px;
@@ -54,131 +50,98 @@ a{
 
 /* Estilo veiculo */
 
-.sessao-principal{
+.veic-sessao-principal{
     box-sizing: border-box;
     display: flex;
     margin: auto;
     flex-direction: column;
     margin-top: 2%;
     width: 60%;
-    height: 50vh;
+    height: 70vh;
     background-color: #E5E5E5;
     border-radius: 10px;
 }
 
-.sessao-principal h1 {
+.veic-sessao-principal h1 {
     text-align: center;
 }
 
-.sessao-principal .faixa-veic, .faixa-cadastros{
-    position: relative;
-    left: 15%;
-    top: 10px;
+.veic-faixas{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.faixa-inputs{
-    margin-left: -40px;
+.veic-faixa-veic, .veic-faixa-cadastros{
+    margin: auto;
 }
 
-.faixa-inputs .btnCadastro{
+.btnCadastro{
     cursor: pointer;
     background-color: #FB5C2A;
     border-style: none;
     border-radius: 5px;
-    margin-right: 10px;
     font-weight: bold;
-    margin-left: 80px;
+    margin-left: 36%;
     margin-bottom: 10px;
     width: 27%;
     height: 30px;
 }
 
-.faixa-inputs input{
-    border-radius: 5px;
-    border-style: 0.1px solid black;
-    height: 20px;
-    width: 15%;
-    margin-left: 20px;
-}
-
-.faixa-inputs .pesquisa{
-    cursor: pointer;
-    padding-left: 5px;
-    margin-left: 20px;
-    background-color: #C4C4C4;
-    width: 40px;
-    height: 25px;
-}
-
-.faixa-veic{
+.veic-faixa-veic{
     height: 25px;
     width: 70%;
     background-color: #C4C4C4;
 }
 
-.faixa-veic ul{
+.veic-faixa-veic ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.faixa-veic ul li{
+.veic-faixa-veic ul li{
     padding-right: 10px;
     padding-left: 10px;
 }
 
-.faixa-cadastros{
-    display: flex;
-    flex-direction: row;
-}
-
-.lista-cadastro{
+.veic-faixa-cadastros{
+    overflow: hidden;
     height: 25px;
     width: 70%;
     background-color: white;
 }
 
-.lista-cadastro ul{
+.veic-faixa-cadastros ul{
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-.lista-cadastro ul button{
+.veic-faixa-cadastros ul li{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.veic-faixa-cadastros ul li button{
     cursor: pointer;
 }
 
-.btns-cadastro button{
-    cursor: pointer;
-    border: 1px solid black;
-    box-shadow: 2px black ; 
+.veic-footer{
     background-color: #C4C4C4;
-    margin-top: 2px;
-    margin-left: 10px;
-}
-
-.faixa-cadastros .lista-cadastro{
-    justify-content: flex-start;
-}
-
-.faixa-cadastros .btns-cadastro{
-    justify-content: flex-end;
-}
-
-.footer{
-    /*background-color: #C4C4C4; */
-    background-image: url('./');
     display: flex;
     justify-content: end;
     position: absolute;
     top: 90%;
     width: 100%;
     height: 10%;
+    
 }
 
-.logo-foford{
+.veic-logo-foford{
     padding-right: 20px;
     padding-top: 35px;
 }
@@ -293,17 +256,4 @@ a{
     height: 25px;
     background-color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
