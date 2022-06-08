@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import './styleHistorico.css'
 import {Component} from 'react'
 import VendaService from '../../services/VendaService';
-import { useState, React } from 'react';
+import { useState } from 'react';
 
 class Historico extends Component{
 
@@ -11,8 +11,7 @@ class Historico extends Component{
         super(props)
 
         this.state = {
-            vendas : [],
-            searchQuery:''
+            vendas : []
         }
 
     }
@@ -23,27 +22,6 @@ class Historico extends Component{
             this.setState({vendas : res.data});
         });
     }
-
-      componentDidUpdate(previousProps, previousState){
-        if(previousState.searchQuery !== this.state.searchQuery){
-          console.log('O componenteDidUpdate() foi disparado')
-          this.fetchData();
-        }
-      }
-
-      fetchData = async () => {
-        const resp = await fetch(
-          'http://localhost:3000/vendas/' + this.state.searchQuery
-        );
-        const resJson = await resp.json();
-        this.setState({venda : resJson[0]});
-      }
-
-      handleInputChange = (event) => {
-        this.setState({
-          searchQuery: event.target.value
-        })
-      }
 
     render(){
     return(
@@ -61,12 +39,7 @@ class Historico extends Component{
             </header>
             <section className="sessao-historico">
             <h1>Histórico de vendas</h1>        
-            <div className="faixa-inputs-hist">
-              <label htmlFor="IDVenda">ID Venda:</label>
-              <input id="IDVenda" type="search" value={this.state.searchQuery} onChange={(e) => this.handleInputChange(e)} />
-              <label htmlFor="Data">Data:</label>
-              <input id="Data" type="datetime" />
-            </div>
+
             <div className="faixa-historico">
               <div>IDVenda</div>
               <div>Nome</div>
@@ -74,18 +47,19 @@ class Historico extends Component{
               <div>Valor</div>
             </div>
 
+            <div className="listagem-vendas">
             {
-                this.state.vendas ?(
-                  <div className="faixa-dados-historico">
-                      <div>{this.state.idVenda}</div>
-                      <div> {this.state.nome} </div>
-                      <div> {this.state.nomeVeiculo} </div>
-                      <div> {this.state.valorVenda} </div>
+                this.state.vendas.map(
+                  venda => 
+                  <div className="faixa-dados-historico" key={venda.idVenda}>
+                      <div>{venda.idVenda}</div>
+                      <div> {venda.nome} </div>
+                      <div> {venda.nomeVeiculo} </div>
+                      <div> {venda.valorVenda} </div>
                 </div>
-                ) : (
-                  <p>Nada encontrado</p>
                 )
             }
+            </div>
           </section>
           <footer className="hist-footer">
             <div className="hist-logo-foford">Foford</div>

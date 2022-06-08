@@ -73,6 +73,7 @@ class Veiculos extends Component {
                             </ul>
                         </div>
 
+                        
                         {
                             this.state.veiculos.map(
                                 veiculo =>
@@ -82,13 +83,12 @@ class Veiculos extends Component {
                                 <li>{veiculo.marca}</li>
                                 <li>{veiculo.placa}</li>
                                 <li>{veiculo.valorVeiculo}</li>
-                                <li> <button type="submit"><img src={editar} height="13px" alt /></button>
+                                <li> 
                                     <button type="submit" onClick={() => this.deleteVeiculo(veiculo.idVeiculo)}><img src={excluir} height="13px" alt /></button></li>
                                 </ul>
-                            </div>
+                                </div>
                                 )
                         }
-
                         
                     </div>
                 </section>

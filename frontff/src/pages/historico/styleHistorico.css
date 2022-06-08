@@ -281,6 +281,10 @@ body{
     justify-content: space-around;
 }
 
+.listagem-vendas{
+    overflow-y: scroll;
+}
+
 .faixa-dados-historico{
     width: 110vh;
     display: flex;

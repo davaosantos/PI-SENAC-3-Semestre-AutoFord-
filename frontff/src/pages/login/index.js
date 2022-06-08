@@ -1,9 +1,26 @@
 import './styleLogin.css'
+import React, {useState} from 'react';
 import raceCar from '../../assets/Race car-pana.svg'
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 
 
 export default function Login() {
+
+    function initialState(){
+        return{user: '', password: ''};
+    }
+
+    const[values, setValues] = useState(initialState);
+
+    function onChange(event){
+        const{value, name} = event.target;
+        setValues({
+            ...values,
+            [name]: value,
+
+        })
+    }
+
     return(
         <div>
             <title>Login</title>
@@ -17,11 +34,11 @@ export default function Login() {
                         <h1>LOGIN</h1>
                         <div className="textfild">
                         <label htmlFor="usuario">Usuário</label> 
-                        <input type="text" name="Usuario" placeholder="Usuário" />
+                        <input type="text" name="user" onChange={onChange} value={values.user} placeholder="Usuário" />
                         </div>
                         <div className="textfild">
                         <label htmlFor="Senha">Senha</label> 
-                        <input type="password" name="Senha" placeholder="Senha" />
+                        <input id="password" name="password" type="password" onChange={onChange} value={values.password} placeholder="Senha" />
                         </div>
                         <button className="btn-login"><a><Link to="/">Login</Link></a></button>
                     </div>
