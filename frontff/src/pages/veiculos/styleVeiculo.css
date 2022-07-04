@@ -147,13 +147,6 @@ body, ul, li, p{
     padding-top: 35px;
 }
 
-.lista-veiculos{
-    display: flex;
-    margin-top: 10px;
-    flex-direction: column;
-    align-items: center;
-    overflow-y: scroll;
-}
 
 
 /*Estilo pag venda*/

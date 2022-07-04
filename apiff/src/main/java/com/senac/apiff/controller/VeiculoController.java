@@ -37,6 +37,7 @@ public class VeiculoController {
 
     @PutMapping(path = "/{id}")
     public void updateVeiculo(@PathVariable int id, @RequestBody Veiculo veiculo){
+
         var resp = repoVeic.findById(id);
         if(resp.isPresent()) {
             var currentVeiculo = resp.get();

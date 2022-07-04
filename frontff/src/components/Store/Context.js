@@ -5,4 +5,4 @@ const StoreContext = createContext({
     setToken: () => {},
 })
 
-export default StoreContext
+export default StoreContext;
